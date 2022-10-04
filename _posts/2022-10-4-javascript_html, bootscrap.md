@@ -8,7 +8,7 @@ layout: null
 ---
 
 ### Javascript를 활용해서 html에 적용시키기
-```
+```html
 <!DOCTYPE html>
 
 <html lang="en">
@@ -41,7 +41,7 @@ layout: null
 ```
 
 ### bootstrap 활용하기
-```
+```html
 <!doctype html>
 <html lang="en">
   <head>

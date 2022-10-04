@@ -3,8 +3,14 @@ layout: page
 title: About
 ---
 
-Hello.
+Hello, I am a traveler studying JavaScript, Python, and RPA UiPath.
 
-This will be your About page. Anything about you, it should be written here in details. You may describe your bio here like who you are, what you do, your intention, social site hyperlinks and how people can contact you, etc.
+I'd like to record my travel diary here.
 
-**Less is more..**
+I'm still inexperienced, but for a better me..
+
+안녕하세요. 자바스크립트, 파이썬, RPA UiPath를 공부하고 있는 여행객입니다.
+
+여기에 제 여행 일지를 기록하려고 합니다. 
+
+아직 미숙하지만 좀 더 나은 나를 위해서..

@@ -1,5 +1,5 @@
 ---
-title: Javascript
+title: Javascript 1일차
 updated: 2022-10-04 17:42
 ---
 <div class="divider"></div>

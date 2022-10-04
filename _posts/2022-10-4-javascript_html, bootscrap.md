@@ -1,7 +1,7 @@
 ---
 category: javaScript
 url_path: '/stuff/:id'
-title: '2022.10.04 자바스크립트 초급'
+title: '2022.10.04 자바스크립트 html, bootsctrap 활용하기'
 type: 'post'
 
 layout: null

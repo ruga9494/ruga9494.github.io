@@ -1,8 +1,8 @@
 ---
 category: Stuff
 url_path: '/stuff/:id'
-title: 'Delete a thing'
-type: 'DELETE'
+title: '2022.10.04 자바스크립트 초급'
+type: 'post'
 
 layout: null
 ---
@@ -33,4 +33,30 @@ layout: null
 html 안에서 스크립트라는 키워드로 js, css 여러가지 사용 가능하다 (다만, 정리를 하지 않으면 지저분함)
 }
 
+현 상황은 춘추전국시대를 끝내고 ECMA 표준으로 거의 자리잡음
+옛날에는 호환성 때문에 힘든 것이 많았음
+옛날에는 자바스크립트 호환성 검색을 많이했음
+자동 분석해주는 사이트 존재
+제이쿼리를 걷어내고, 큰 트랜드는 제이쿼리를 잘 안씀 
+ >> 왜냐하면 여러가지 문제를 일으키고, 제일 큰 것은 호환성이 잘 안됨
+꿀Tip) 크롬에서 잘 개발하면 웬만한 곳에서 다 호환이 잘됨
+
+디버깅이란?
+ >> 내가 의도하는대로 잘 작동하는지 확인 후 문제가 있으면 수정하는 행위
+
+브라우저 -> 개발자도구(F12) -> 콘솔창에서 눈으로 찍어보는 것이 제일 좋음
+(크롬)개발자도구 관련 유튜브 찾아봐서 공부하는 것이 제일 좋음
+
+```
+<script type="text/javascript">  ->> 이모양은 옛날 버전
+
+</script>
+```
+
+자바스크립트의 주석처리
+I D E 통합개발환경 (vscode)
+컨트롤 슬래쉬 -> 주석처리
+한줄처리 //
+여러줄 /* */
+부분 단축키 
 For errors responses, see the [response status codes documentation](#response-status-codes).

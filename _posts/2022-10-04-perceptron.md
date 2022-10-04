@@ -1,5 +1,5 @@
 ---
-title: Javascript 1일차
+title: 딥러닝/인공지능 - Perceptron
 updated: 2022-10-04 22:24
 ---
 

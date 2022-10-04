@@ -1,6 +1,6 @@
 ---
-title: Lorem Ipsum
-updated: javascript 2022-10-04 17:42
+title: Javascript
+updated: 2022-10-04 17:42
 ---
 
 ### JavaScript로 html 활용하기

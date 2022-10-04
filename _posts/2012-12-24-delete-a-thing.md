@@ -7,7 +7,7 @@ type: 'DELETE'
 layout: null
 ---
 
-This method allows the user to post a new thing to his stuff.
+This method allows잉어잉어 the user to post a new thing to his stuff.
 
 ### Request
 

@@ -7,7 +7,7 @@ type: 'PUT'
 layout: null
 ---
 
-This method allows the user to retrieve his stuff.
+This method allows달팽이는 스내일스내일 the user to retrieve his stuff.
 
 ### Request
 

@@ -7,7 +7,7 @@ type: 'POST'
 layout: null
 ---
 
-This method allows users to create a new thing.
+This method 시계는 와치와치s users to create a new thing.
 
 ### Request
 

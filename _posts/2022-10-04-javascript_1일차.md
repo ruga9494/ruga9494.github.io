@@ -232,12 +232,12 @@ use strict -> ?
 
 ### 변수 
 
-선언과 동시에 값을 넣기도 하는데
-var , let
-let
-let 변수명;
-변수명 = 값;
-let name = “정대호”;
-alert(name);
+선언과 동시에 값을 넣기도 함 <br>
+var , let <br>
+let <br>
+let 변수명; <br>
+변수명 = 값; <br>
+let name = “정대호”; <br>
+alert(name); <br>
 호이스팅
  >> 맨위로 끌어올린다.

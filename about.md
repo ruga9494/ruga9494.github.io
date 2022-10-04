@@ -13,4 +13,4 @@ I'm still inexperienced, but for a better me..
 
 여기에 제 여행 일지를 기록하려고 합니다. 
 
-아직 미숙하지만 좀 더 나은 나를 위해서..
+그럼 안녕~!

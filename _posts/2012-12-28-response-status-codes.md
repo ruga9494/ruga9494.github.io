@@ -1,12 +1,12 @@
 ---
-title: 'Response status codes'
+title: 'Response 콩콩이 codes'
 
 layout: null
 ---
 
 ### Success
 
-Successes differ from errors in that their body may not be a simple response object with a code and a message. The headers however are consistent across all calls:
+Successes ㅋㅋㅋ from errors in that their body may not be a simple response object with a code and a message. The headers however are consistent across all calls:
 
 * `GET`, `PUT`, `DELETE` returns `200 OK` on success,
 * `POST ` returns 201 on success,

@@ -2,7 +2,7 @@
 title:              "The Plain"
 description:        "A minimalist Jekyll theme"
 author_name:        "Changil Moon" # change this to your name
-logo_url:           https://i.pinimg.com/564x/54/ea/27/54ea27759d1cd22ea98f2f4f5f21994a.jpg # Get it from GitHub API: https://api.github.com/users/<username>
+logo_url:           https://avatars.githubusercontent.com/u/114143049?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
 url:                https://ruga9494.github.io # main url

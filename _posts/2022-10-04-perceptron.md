@@ -5,7 +5,7 @@ updated: 2022-10-04 22:24
 
 ### 학습영상
 
-url : https://www.youtube.com/watch?v=C2sqt9pG6K0&ab_channel=%EC%BD%94%EB%94%A9%ED%95%98%EB%8A%94%EA%B1%B0%EB%8B%88
+url : https://www.youtube.com/watch?v=C2sqt9pG6K0&ab_channel=%EC%BD%94%EB%94%A9%ED%95%98%EB%8A%94%EA%B1%B0%EB%8B%88 <br>
 url : https://www.youtube.com/watch?v=mRnXgBDf_oE&ab_channel=%EC%A1%B0%EC%BD%94%EB%94%A9JoCoding
 
 <div class="divider"></div>

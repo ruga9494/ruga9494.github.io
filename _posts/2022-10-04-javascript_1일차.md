@@ -81,12 +81,13 @@ webos, TV 안드로이드, 타이젠
 ### 공부방법
 공식문서
  >> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
 구글링  ex) django docu 최상단에 공식문서
 	   ECMA docu
 aka 설명서부터 읽어봐라
 
 ### 디버깅이란?
- >> 내가 의도하는대로 잘 작동하는지 확인 후 문제가 있으면 수정하는 행위
+ > 내가 의도하는대로 잘 작동하는지 확인 후 문제가 있으면 수정하는 행위
 
 브라우저 -> 개발자도구(F12) -> 콘솔창에서 눈으로 찍어보는 것이 제일 좋음
 (크롬)개발자도구 관련 유튜브 찾아봐서 공부하는 것이 제일 좋음
@@ -106,14 +107,14 @@ aka 설명서부터 읽어봐라
 ```javascript
 <script type="text/javascript">  
   console.log("Hello World!")
-</script>
+</script>;
 ```
 
 ### JavaScript 현재 모양
 ```javascript
 <script>  
  console.log("Hello World!")
-</script>
+</script>;
 ```
 
 <div class="divider"></div>
@@ -151,6 +152,8 @@ aka 설명서부터 읽어봐라
 </body>
 </html>
 ```
+
+<div class="divider"></div>
 
 ### JavaScript로 Bootstrip
 
@@ -193,12 +196,15 @@ aka 설명서부터 읽어봐라
  >> 왜냐하면 여러가지 문제를 일으키고, 제일 큰 것은 호환성이 잘 안됨
 꿀Tip) 크롬에서 잘 개발하면 웬만한 곳에서 다 호환이 잘됨
 
+<div class="divider"></div>
+
 ### 파이썬
 
 ```python
 for  item in items:
    print()
 ```
+
 ### 파이썬 c 스타일
 ```python
 for i in range(0, len(dfd)):
@@ -211,14 +217,18 @@ for (i;i<변수.length;i++){
 }
 ```
 
+<div class="divider"></div>
+
 ### 자바스크립트의 주석처리
-I D E 통합개발환경 (vscode)
-컨트롤 슬래쉬 -> 주석처리
-한줄처리 //
-여러줄 /* */
-부분 단축키 알트 쉬프트 A
+I D E 통합개발환경 (vscode) <br>
+컨트롤 슬래쉬 -> 주석처리 <br>
+한줄처리 // <br>
+여러줄 /* */ <br>
+부분 단축키 알트 쉬프트 A <br>
 
 use strict -> ?
+
+<div class="divider"></div>
 
 ### 변수 
 

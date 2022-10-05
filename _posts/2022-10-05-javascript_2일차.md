@@ -128,7 +128,7 @@ Boolean(value): // 불린형
 
 - html은 폼을 통해서 받는다. 
 
-``` html
+```
 <form>
   <input type="text">
 </form>
@@ -233,8 +233,8 @@ for ($i=0;$i<count(변수);, i++){
 더한 다음에 처음 것을 넣어주느냐 -> ? 먼소리
 
 ### 비트와이즈연산자
-1. 비트 AND ( & )
-2. 비트 OR ( | )
+1. 비트 AND ( "&" )
+2. 비트 OR ( "|" )
 3. 비트 XOR ( ^ )
 4. 비트 NOT ( ~ )
 5. 왼쪽 시프트(LEFT SHIFT) ( << )
@@ -289,18 +289,13 @@ alert(a == b); // true!
 
 ##### null이나 undefined와 비교하기
 
-alert(null == undefined);<br>
-alert(null === undefined);
 
 ```javascript
 alert(null == undefined);
 alert(null === undefined);
 ```
 
-#### 조건부 연산자
-
-let year = prompt('ECMAScript-2015 명세는 몇 년도에 출판되었을까요?', '');<br>
-if (year == 2015) alert( '정답입니다!' );
+##### 조건부 연산자
 
 ```javascript
 let year = prompt('ECMAScript-2015 명세는 몇 년도에 출판되었을까요?', '');
@@ -311,13 +306,30 @@ if (year == 2015) alert( '정답입니다!' );
 
 ```javascript
 
-if () {
+if (a==true) {
 
-} else {
-
-} else {
+} else if {
 
 } else {
 
 }
 ```
+
+조건부 연산자는 물음표?로 표시합니다. 피연산자가 세 개이기 때문에 조건부 연산자를 '삼항(ternary) 연산자’라고 부르는 사람도 있습니다. 참고로 자바스크립트에서 피연산자가 3개나받는 연산자는 조건부 연산자가 유일합니다.
+
+```javascript
+let age = prompt('나이를 입력해주세요.', 18);
+let message = (age < 3) ? '아기야 안녕?' :
+ (age < 18) ? '안녕!' :
+ (age < 100) ? '환영합니다!' :
+ '나이가 아주 많으시거나, 나이가 아닌 값을 입력 하셨군요!';
+```
+
+ - ? : 삼항연산자 if 문을 처리할 수 있다.
+
+##### 논리연산자
+ "||"(or), "&&"(AND), "!"(NOT)
+
+##### nullish 병합연산자 ??
+ - 스펙에 추가된지 얼마 안 된 문법이다. 구식 브라우저는 폴리필이 필요함
+ ECMA2022  << 요게 스펙

@@ -234,7 +234,7 @@ for ($i=0;$i<count(변수);, i++){
 
 ### 비트와이즈연산자
 1. 비트 AND ( "&" )
-2. 비트 OR ( "|" )
+2. 비트 OR ( "\" )
 3. 비트 XOR ( ^ )
 4. 비트 NOT ( ~ )
 5. 왼쪽 시프트(LEFT SHIFT) ( << )
@@ -330,6 +330,179 @@ let message = (age < 3) ? '아기야 안녕?' :
 ##### 논리연산자
  "||"(or), "&&"(AND), "!"(NOT)
 
+ ```javascript
+let hour = 0
+if ((hour < 10) || (hour >18)){
+  alert("hh");
+}
+```
+
 ##### nullish 병합연산자 ??
  - 스펙에 추가된지 얼마 안 된 문법이다. 구식 브라우저는 폴리필이 필요함
  ECMA2022  << 요게 스펙
+
+<div class="divider"></div>
+
+### 반복문
+ - while문
+
+a =0;
+while (조건) {
+  a += 1
+}
+
+ - for문
+for (초기값; 조건; 증감) {
+
+}
+
+```javascript
+let list = ['a','b'];
+    for (i=0; i<list.length; i++) {
+      console.log(`${i}번째 항목입니다. 값은 ${list[i]}`);
+    }
+```
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>첫화면</title>
+  <!-- 외부스크립트 -->
+  <!-- <script src="path/to/script.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+</head>
+<body>
+  <table>
+    <tr>
+      <td id="name"></td>
+      <td id="age"></td>
+    </tr>
+  </table>
+
+  <script>
+    let column1 = [
+    "홍길동",
+    "세종대왕",
+    "이순신",
+    "홍길동",
+    "세종대왕",
+    "이순신",
+    ];
+    let column2 = [33, 44, 55, 33, 44, 55];
+
+    for (i = 0; i < column1.length; i++) {
+      console.log(`${i}번째 항목입니다.값은 ${column1[i]}`);
+    }
+
+    for (let i =0; i < 3; i ++) {
+      for (let j =0; j< 3; j++) {
+        if (j==1) {
+          alert(`${i} and ${j}`);
+          break
+        }
+      }
+      break
+      alert(`${i} and ${j}`);
+    }
+  </script>
+</body>
+</html>
+```
+
+<div class="divider"></div>
+
+### 조건문 if 문
+```javascript
+let a = 2 + 2;
+switch (a) {
+ case 3:
+ alert( '비교하려는 값보다 작습니다.' );
+ case 4:
+ alert( '비교하려는 값과 일치합니다.' );
+ case 5:
+ alert( '비교하려는 값보다 큽니다.' );
+ default:
+ alert( "어떤 값인지 파악이 되지 않습니다." );
+}
+```
+
+<div class="divider"></div>
+
+### 함수
+
+function showmessage(매개변수)
+
+```javascript
+function showMessage(name, age) {
+  let 소개 = `이름은${name} 입니다. 나이는 ${age}입니다`
+  return 소개 
+}
+
+let 소개 = showMessage("문창일", 29);
+```
+
+```javascript
+function checkAge(age) {
+ if (age >= 18) {
+ return true;
+ } else {
+ return confirm('보호자의 동의를 받으셨나요?');
+ }
+}
+let age = prompt('나이를 알려주세요', 18);
+if ( checkAge(age) ) {
+ alert( '접속 허용' );
+} else {
+ alert( '접속 차단' );
+}
+```
+
+```javascript
+function checkname(name) {
+      switch(name) {
+        case "문창일":
+        console.log(`안녕하세요 ${name}님`)
+        break
+        case "도둑":
+        console.log(`저리가세요 ${name}님`)
+        break
+        default:
+        console.log(`안녕하세요 ${name}님`)
+      }
+    }
+
+    let name1 = prompt('이름을 알려주세요', "문창일");
+    checkname(name1)
+```
+
+<div class="divider"></div>
+
+파이썬 - 람다함수
+자바스크립트 - 콜백함수 (함수가 함수를 부르는?)
+
+
+#### 콜백함수 예시
+```javascript
+function ask(question, yes, no){
+  if (confirm(question)) {
+    yes()
+  }else{
+    no();
+  } 
+}
+function showOk() {
+  alert("동의하셨습니다.");
+}
+function showCancel() {
+  alert("취소 버튼을 누르셨습니다.");
+}
+
+ask("동의하시겠습니까?", showOk, showCancel); //콜백함수
+
+```
+

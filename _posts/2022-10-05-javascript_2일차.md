@@ -504,5 +504,30 @@ function showCancel() {
 
 ask("동의하시겠습니까?", showOk, showCancel); //콜백함수
 
+
+ask(
+  "동의하시겠습니까?"
+  function() { alert("동의하셨습니다."); },
+  function() { alert("취소 버튼을 누르셨습니다."); }
+);
 ```
 
+#### 함수 표현식
+```javascript
+let sum = function(a, b) {
+ return a + b;
+};
+```
+
+#### 함수 선언문
+```javascript
+
+sayHi("John"); // Hello, John
+function sayHi(name) {
+ alert( `Hello, ${name}` );
+}
+```
+
+### 함수 표현식과 선언문의 차이
+ - 함수를 변수에 담는 것은 변수를 먼저 인식 해야 함수가 작동이 가능 (함수표현식)
+ - 함수를 선언할 경우 위치와 상관없이 javascript가 작동될 때, 함수가 선언이 됨 (함수선언문)

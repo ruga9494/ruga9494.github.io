@@ -1,5 +1,5 @@
 ---
-title: Javascript 3일차
+title: Javascript 목록만들기
 updated: 2022-10-05 09:17
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Javascript 2일차
-updated: 2022-10-04 21:32
+updated: 2022-10-05 09:10
 ---
 
 ### 자료형

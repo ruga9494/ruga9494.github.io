@@ -1,6 +1,6 @@
 ---
 title: Javascript 3일차
-updated: 2022-10-05 09:17
+updated: 2022-10-06 09:17
 ---
 <div class="divider"></div>
 
@@ -185,4 +185,16 @@ obj[key1]
 let obj = {윤성현:"오늘휴가씀"}
 
 alert(obj[윤성현]);
+
+// 함수로 만들기
+function abcd(name){
+      let obj = {윤성현:"오늘휴가씀",박문수:"블로그개장",정우빈:"기세"}
+      let today = alert(obj[name]);
+      return today
+    };
+    
+
+    let name = prompt("이름입력")
+
+    abcd(name);
 ```

@@ -5,8 +5,8 @@ updated: 2022-10-11 22:54
 
 ### 학습영상
 
-url : https://www.youtube.com/watch?time_continue=80&v=PYTZ65FzEG4&feature=emb_title&ab_channel=%EB%B0%95%ED%95%B4%EC%84%A0 <br>
-url : https://www.youtube.com/watch?v=VVArHrsxrYU&ab_channel=%EB%B9%B5%ED%98%95%EC%9D%98%EA%B0%9C%EB%B0%9C%EB%8F%84%EC%83%81%EA%B5%AD
+url :[선형회귀 영상](https://www.youtube.com/watch?time_continue=80&v=PYTZ65FzEG4&feature=emb_title&ab_channel=%EB%B0%95%ED%95%B4%EC%84%A0) <br>
+url :[AI 챗봇 만들기](https://www.youtube.com/watch?v=VVArHrsxrYU&ab_channel=%EB%B9%B5%ED%98%95%EC%9D%98%EA%B0%9C%EB%B0%9C%EB%8F%84%EC%83%81%EA%B5%AD)
 
 <div class="divider"></div>
 

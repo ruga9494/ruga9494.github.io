@@ -187,7 +187,7 @@ updated: 2022-10-07 09:01
 ```
 <div class="divider"></div>
 
-### 펙토리얼
+### 팩토리얼
 
 ```javascript
 <!DOCTYPE html>

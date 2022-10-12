@@ -1,6 +1,6 @@
 ---
 title: Javascript 4일차
-updated: 2022-10-07 09:01
+updated: 2022-10-11 09:01
 ---
 
 ### 3의 배수 찾기

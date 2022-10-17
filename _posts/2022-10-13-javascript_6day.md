@@ -1,6 +1,6 @@
 ---
 title: Javascript 6일차
-updated: 2022-10-12 09:14
+updated: 2022-10-13 09:14
 ---
 
 ## Do it 한 권으로 끝내는  Html + css + 자바스크립트 웹 표준의 정석 p.550
@@ -239,6 +239,23 @@ let customer = prompt("숫자 두 개를 입력하세요.", "10,10");
 
 <div class="divider"></div>
 
+<div class="divider"></div> 
+
+### 책 p.570 캘린더 만들기
+
+```javascript
+var now = new Date("2020-10-15");      // 오늘 날짜를 객체로 지정
+        var firstDay = new Date("2020-10-15"); // 시작 날짜를 객체로 지정
+
+        var toNow = now.getTime();             // 오늘까지 지난 시간 (밀리초)
+        var toFirst = firstDay.getTime();      // 첫날까지 지난 시간 (밀리초)
+        var passedTime = toNow - tofirst;       // 첫날부터 오늘까지 지난 시간 (밀리초)
+
+        passedTime = math.round(passedTime/(1000*60*60*24)); //밀리초를 일수로 계산하고 반올림
+
+        document.querySelector('#result').innerText = passedTime;
+```
+
 ### Toast 캘린더 만들기
 * [Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/)<br>
 * Toast 활용법](https://blog.jounsaram.net/?p=276)
@@ -310,7 +327,6 @@ let customer = prompt("숫자 두 개를 입력하세요.", "10,10");
   template: {
     time(event) {
       const { start, end, title } = event;
-
       return `<span style="color: white;">${formatTime(start)}~${formatTime(end)} ${title}</span>`;
     },
     allday(event) {
@@ -330,21 +346,3 @@ let customer = prompt("숫자 두 개를 입력하세요.", "10,10");
     },
   ],
 });
-
-<div class="divider"></div>
-
-### 책 p.570 캘린더 만들기
-
-```javascript
-var now = new Date("2020-10-15");      // 오늘 날짜를 객체로 지정
-        var firstDay = new Date("2020-10-15"); // 시작 날짜를 객체로 지정
-
-        var toNow = now.getTime();             // 오늘까지 지난 시간 (밀리초)
-        var toFirst = firstDay.getTime();      // 첫날까지 지난 시간 (밀리초)
-        var passedTime = toNow - tofirst;       // 첫날부터 오늘까지 지난 시간 (밀리초)
-
-        passedTime = math.round(passedTime/(1000*60*60*24)); //밀리초를 일수로 계산하고 반올림
-
-        document.querySelector('#result').innerText = passedTime;
-```
-

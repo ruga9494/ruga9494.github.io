@@ -85,6 +85,8 @@ for (i in newkim) {
 // console.log(kim, newKim); // oo와 arr이 다르면 통과!
 ```
 
+<div class="divider"></div>
+
 ##### 새로 도전중
 
 ```javascript
@@ -189,6 +191,8 @@ for (i in newkim) {
 
 
 ```
+
+<div class="divider"></div>
 
 ### 애매한 버전
 

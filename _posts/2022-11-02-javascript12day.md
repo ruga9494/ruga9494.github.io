@@ -1,5 +1,5 @@
 ---
-title: Javascript 11일차
+title: Javascript 12일차
 updated: 2022-11-02 21:12
 ---
 

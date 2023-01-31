@@ -3,7 +3,7 @@ title: UIPath LinQ and Invoke Method
 updated: 2023-01-30 15:30
 ---
 
-## UIpath CNSS-Check2
+## UIpath CNSS-Check_1-1
 
 ### 1. LinQ 사용법
 
@@ -20,7 +20,9 @@ DT1.AsEnumerable().GroupBy(Function(i) i.Field(Of String)("이름")).Select(Func
 ```
 
 중복 행을 지우면서 마지막에 있는 행을 남긴다 라는 뜻
-Last를 First로 바꾸면 첫번째 행을 가져온다는 뜻
+Last를 First로 바꾸면 첫번째 행을 가져온다는 뜻<br>
+
+
 
 ### 2. Invoke Method 사용법
 

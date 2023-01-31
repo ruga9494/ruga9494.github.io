@@ -21,11 +21,23 @@ Select Convert.ToString(row("점코드"))
 ).ToList
 ```
 
+```
+Lst_DotCode = 
+(
+From row In DT_Templete_Cast.AsEnumerable
+Select Convert.ToString(row("점코드"))
+).ToList
+```
+
 DT1(기존데이터)에서 점코드 Column만 쭉 가져온다 (1초도 안걸림)
 (참고로 list로 가져옴)
 
+<br>
+
 ##### STEP_3
 - Lst_DotCode를 기준으로 DT1(기존데이터)를 필터링 해주면 끝
+
+<br>
 
 ### 2. VLookup 사용법
 

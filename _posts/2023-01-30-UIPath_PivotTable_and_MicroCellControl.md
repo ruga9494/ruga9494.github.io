@@ -3,7 +3,7 @@ title: UIPath Excel Pivot Table and Micro Cell Control
 updated: 2023-01-30 16:00
 ---
 
-## UIpath CNSS-Check2
+## UIpath CNSS-Check_1-2
 
 ### 1. Pivot Table 사용법
 
@@ -15,6 +15,7 @@ updated: 2023-01-30 16:00
 ### 2. Micro Cell Control 사용법
 
  별거 없다 말 그대로 세부셀 조정방법이다.
+
 ##### STEP_1
 
 1. VBA를 사용하거나

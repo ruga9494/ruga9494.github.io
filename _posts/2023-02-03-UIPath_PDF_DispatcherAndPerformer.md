@@ -70,14 +70,13 @@ updated: 2023-02-03 17:00
 
    Total Amount를 긁어 올때, ")"가 있을때, 없을때가 있기 때문에 조건을 걸어 준다. <br>
 
-
    ```python
-   
+
    // ")"가 있으면,
    out_Str_Total_Amount = "$"+currentItem.ToString.Split("$"c)(1).ToString.Split(")"c)(0).ToString
    // ")"가 없으면,
    out_Str_Total_Amount= "$"+currentItem.ToString.Split("$"c)(1).ToString.Trim
-   
+
    ```
 
 7. 각 PDF 마다 특징있는 값 가져오기 <br>

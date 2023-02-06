@@ -106,14 +106,13 @@ out_Str_Classification = "Credit Memo"
 
 ```
 
-<b>
 
-나머지도 이런식으로 찾아야한다. <br>
+<b> 나머지도 이런식으로 찾아야한다. 이것이 핵심</b> <br>
 
    1. 변수에 null값이 존재하면 안되므로 ""을 사용하여 빈값을 꼭채워넣어야한다.<br>
    2. 각 PDF에 비슷한 특징이 있으면 이중 if문을 사용해야한다.<br>
 
-</b>
+
 
 
 8. Queue에 집어 넣기
@@ -127,39 +126,57 @@ out_Str_Classification = "Credit Memo"
 
 ### 2. Performer로 Queue를 가져와 Excel로 만들기
 
-##### STEP_1 Get Transaction Item
+##### STEP_1 InitAllApplication
+1. 최종 파일 Excel이름을 'Invoke_통합_yyyy-MM-dd.xlsx'로 해야한다. <br>
+2. ` Today.ToString("yyyy-MM-dd")를 써서 폼을 만들어 준다. <br>
+3. 저장할 파일 위치 이름을 변수로 받아 준다. <br>
+   ``` out_Str_OutPut_Temp_Path = in_Config("OutPut_Path").ToString+"\"+in_Config("Final_Report_Name").ToString.Replace("yyyy-MM-dd", Str_Today) ```
+   여기에서 중요한 것은 Replace 부분이다. 
+4. 그리고 똑같은 날짜의 파일 이름이 존재 한다면 지워준다. (파일 초기화)
+5. Template 복사 후 진행
 
-1. InitAllApplications는 생략한다. 중요x <br>
-2. Get Transaction Item Activity 사용 <br>
-3. Config에 있는 OrchestratorQueueFolder와 OrchestratorQueueName을 가져온다. / 미리 Config에 설정하기 <br>
+##### STEP_2 Get Transaction Item
+
+1. InitAllApplications는 생략한다. Queue를 사용할 때는 필요없다. 기본적인 설정이 필요할 때 사용 <br>
+2. Get Queue Item Activity 사용해서 Orchestrator에서 Queue값을 가져온다. <br>
+3. Config에서 OrchestratorQueueFolder와 OrchestratorQueueName을 가져온다. / 미리 Config에 설정하기 <br>
 4. 그러면 QueueItem을 알아서 가져온다. <br>
 
-##### STEP_2 Process
+##### STEP_3 Process
 
 1. Process에서는 Add Data Row로 Template.Clone에 쌓아준다. <br>
 2. 인수로 QueueItem을 받아준다 받아주는 방법은 <br>
 
-```
-in_Str_Month = in_TransactionItem.SpecificContent("Month").ToString
-in_Str_Classification = in_TransactionItem.SpecificContent("Classification").ToString
-in_Str_Invoice_Date = in_TransactionItem.SpecificContent("Invoice_Date").ToString
-in_Str_Invoice_Number = in_TransactionItem.SpecificContent("Invoice_Number").ToString
-in_Str_Original_Invoice_Number = in_TransactionItem.SpecificContent("Original_Invoice_Number").ToString
-in_Str_Account_Number = in_TransactionItem.SpecificContent("Account_Number").ToString
-in_Str_Account_Name = in_TransactionItem.SpecificContent("Account_Name").ToString
-in_Str_Linked_Account_Name = in_TransactionItem.SpecificContent("Linked_Account_Name").ToString
-in_Str_Duration_Start = in_TransactionItem.SpecificContent("Duration_Start").ToString
-in_Str_Amount = in_TransactionItem.SpecificContent("Amount").ToString
-in_Str_Remark = in_TransactionItem.SpecificContent("Remark").ToString
-io_DT_Final = io_DT_Final
+   ```
+   in_Str_Month = in_TransactionItem.SpecificContent("Month").ToString
+   in_Str_Classification = in_TransactionItem.SpecificContent("Classification").ToString
+   in_Str_Invoice_Date = in_TransactionItem.SpecificContent("Invoice_Date").ToString
+   in_Str_Invoice_Number = in_TransactionItem.SpecificContent("Invoice_Number").ToString
+   in_Str_Original_Invoice_Number = in_TransactionItem.SpecificContent("Original_Invoice_Number").ToString
+   in_Str_Account_Number = in_TransactionItem.SpecificContent("Account_Number").ToString
+   in_Str_Account_Name = in_TransactionItem.SpecificContent("Account_Name").ToString
+   in_Str_Linked_Account_Name = in_TransactionItem.SpecificContent("Linked_Account_Name").ToString
+   in_Str_Duration_Start = in_TransactionItem.SpecificContent("Duration_Start").ToString
+   in_Str_Amount = in_TransactionItem.SpecificContent("Amount").ToString
+   in_Str_Remark = in_TransactionItem.SpecificContent("Remark").ToString
+   io_DT_Final = io_DT_Final
 
-```
+   ```
 
-<b>
-in_TransactionItem의 Type은 QueueItem 이다. QueueItem의 값을 가져오려면
-``` in_TransactionItem.SpecificContent("키값") ```
-을 해주면 된다.
+   <b>
+   in_TransactionItem의 Type은 QueueItem 이다. QueueItem의 값을 가져오려면
+
+   ``` in_TransactionItem.SpecificContent("키값").ToString ```
+
+   을 해주면 된다.
 
 3. Config에 있는 OrchestratorQueueFolder와 OrchestratorQueueName을 가져온다. / 미리 Config에 설정하기
 4. 그러면 QueueItem을 알아서 가져온다.
-5.
+5. 클론 DataTable인 io_DT_Final에 위에 변수 지정한 것을 배열로 넣어 준다.
+   ``` {in_Str_Month, in_Str_Classification, in_Str_Invoice_Date, in_Str_Invoice_Number, in_Str_Original_Invoice_Number, in_Str_Account_Number, in_Str_Account_Name, in_Str_Linked_Account_Name, in_Str_Duration_Start, in_Str_Amount, in_Str_Remark} ```
+
+##### STEP_4 CloseAllapplications
+
+1. io_DT_Final에 쌓인 DataTable을 Excel에 작성한다.
+2. 끝
+

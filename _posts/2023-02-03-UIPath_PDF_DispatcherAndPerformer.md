@@ -57,19 +57,25 @@ updated: 2023-02-03 17:00
 
    b. 나머지들 추출방법 <br>
 
-   ``` 
+   ```
    out_Str_Invoice_Date = currentItem.ToString.Split({"Date:"}, StringSplitOptions.RemoveEmptyEntries)(1).ToString.Trim <br>
    out_Str_ATTN = currentItem.ToString.Split(":"c)(1).ToString.Trim
-   out_Str_Month =  currentItem.ToString.Split({"period"}, StringSplitOptions.RemoveEmptyEntries)(1).Split("1"c)(0).ToString.Trim 
+   out_Str_Month =  currentItem.ToString.Split({"period"}, StringSplitOptions.RemoveEmptyEntries)(1).Split("1"c)(0).ToString.Trim
 
-   ``` 
+   ```
 
    C. 값이 조금씩 다른 경우 <br>
-   ``` currentItem.ToString.Split("$"c)(1).ToString.Trim.Contains(")") ``` Total Amount를 긁어 올때, ")"가 있을때, 없을때가 있기 때문에 조건을 걸어 준다. <br>
-   ")"가 있으면, 
-   ```out_Str_Total_Amount = "$"+currentItem.ToString.Split("$"c)(1).ToString.Split(")"c)(0).ToString``` <br>
-   ")"가 없으면, 
-   ```out_Str_Total_Amount= "$"+currentItem.ToString.Split("$"c)(1).ToString.Trim``` 
+   ```currentItem.ToString.Split("$"c)(1).ToString.Trim.Contains(")")``` 
+   Total Amount를 긁어 올때, ")"가 있을때, 없을때가 있기 때문에 조건을 걸어 준다. <br>
+
+
+   ```
+   // ")"가 있으면,
+   out_Str_Total_Amount = "$"+currentItem.ToString.Split("$"c)(1).ToString.Split(")"c)(0).ToString
+   // ")"가 없으면,
+   out_Str_Total_Amount= "$"+currentItem.ToString.Split("$"c)(1).ToString.Trim
+   
+   ```
 
 7. 각 PDF 마다 특징있는 값 가져오기 <br>
    if로 조건을 건다. 특징이 중첩 될 경우 2중 if문을 사용한다. <br>

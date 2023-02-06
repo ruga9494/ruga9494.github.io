@@ -65,11 +65,14 @@ updated: 2023-02-03 17:00
    ```
 
    C. 값이 조금씩 다른 경우 <br>
-   ```currentItem.ToString.Split("$"c)(1).ToString.Trim.Contains(")")``` 
+
+   `currentItem.ToString.Split("$"c)(1).ToString.Trim.Contains(")")`
+
    Total Amount를 긁어 올때, ")"가 있을때, 없을때가 있기 때문에 조건을 걸어 준다. <br>
 
 
-   ```
+   ```python
+   
    // ")"가 있으면,
    out_Str_Total_Amount = "$"+currentItem.ToString.Split("$"c)(1).ToString.Split(")"c)(0).ToString
    // ")"가 없으면,
